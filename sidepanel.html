@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real-time High-Risk Extension Demo</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css" />
+  </head>
+  <body>
+    <h1>Real-time High-Risk Extension Demo</h1>
+
+    <div class="data-section">
+      <h2>Keylogger Data</h2>
+      <button id="clearKeylogger">Clear Keylogger</button>
+      <div id="keyloggerOutput" class="output"></div>
+    </div>
+
+    <div class="data-section">
+      <h2>Clipboard Content</h2>
+      <div id="clipboardOutput" class="output"></div>
+    </div>
+
+    <div class="data-section">
+      <h2>Cookies</h2>
+      <button id="clearCookies">Clear All Cookies</button>
+      <div id="cookiesOutput" class="output"></div>
+    </div>
+
+    <div class="data-section">
+      <h2>Browsing History</h2>
+      <button id="clearHistory">Clear Browser History</button>
+      <div id="historyOutput" class="output"></div>
+    </div>
+
+    <div class="data-section">
+      <h2>Installed Extensions</h2>
+      <button id="disableExtensions">Disable All Extensions</button>
+      <button id="enableExtensions">Enable All Extensions</button>
+      <div id="extensionsOutput" class="output"></div>
+    </div>
+
+    <script src="js/sidepanel.js"></script>
+  </body>
+</html>
