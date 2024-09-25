@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "Dangerous Extension Bob Demo",
   "version": "1.0",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
   "description": "Demonstrates potential security risks of browser extensions",
   "permissions": [
     "tabs",
