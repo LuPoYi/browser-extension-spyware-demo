@@ -70,6 +70,11 @@ document.getElementById('clearHistory').addEventListener('click', () => {
 document.getElementById('clearKeylogger').addEventListener('click', () => {
   document.getElementById('keyloggerOutput').innerHTML = '';
 
-  // 清空 Chrome 存儲的 keylogger 資料
   chrome.storage.local.set({ keylogger: [] }, () => console.log('Keylogger data cleared'));
+});
+
+document.getElementById('crazyStyleBtn').addEventListener('click', () => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, { action: 'applyCrazyStyle' });
+  });
 });
